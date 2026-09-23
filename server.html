@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ESS | Server Rules</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #080b14;
+    color: #e8ecf7;
+    line-height: 1.7;
+}
+
+/* TOP NAVIGATION */
+
+header {
+    background: #0d1222;
+    border-bottom: 1px solid #27304a;
+    padding: 18px 7%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #66e3ff;
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #cbd3e8;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.25s;
+}
+
+nav a:hover {
+    color: #66e3ff;
+}
+
+/* PAGE */
+
+.container {
+    width: 86%;
+    max-width: 1050px;
+    margin: 55px auto;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.page-title h1 {
+    font-size: 42px;
+    color: #66e3ff;
+    margin-bottom: 8px;
+}
+
+.page-title p {
+    color: #8994ad;
+}
+
+/* RULE CARDS */
+
+.rule {
+    background: #101626;
+    border: 1px solid #252e46;
+    border-radius: 12px;
+    padding: 25px 28px;
+    margin-bottom: 22px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+    transition: 0.25s;
+}
+
+.rule:hover {
+    border-color: #66e3ff;
+    transform: translateY(-2px);
+}
+
+.rule h2 {
+    color: #66e3ff;
+    font-size: 21px;
+    margin-bottom: 13px;
+}
+
+.rule p {
+    color: #cbd3e8;
+    margin-bottom: 8px;
+}
+
+.rule ul {
+    padding-left: 25px;
+    color: #b9c2d8;
+}
+
+.rule li {
+    margin: 6px 0;
+}
+
+.rule ul ul {
+    margin-top: 5px;
+}
+
+/* NUMBER */
+
+.number {
+    display: inline-block;
+    background: #17243b;
+    color: #66e3ff;
+    padding: 2px 9px;
+    border-radius: 6px;
+    margin-right: 6px;
+}
+
+/* QUICK LINKS */
+
+.quick-links {
+    margin-top: 55px;
+    background: #101626;
+    border: 1px solid #252e46;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+.quick-links h2 {
+    color: #66e3ff;
+    margin-bottom: 15px;
+}
+
+.quick-links a {
+    display: inline-block;
+    margin: 7px 12px 7px 0;
+    padding: 9px 15px;
+    border-radius: 7px;
+    background: #17243b;
+    color: #dce4f7;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.quick-links a:hover {
+    background: #66e3ff;
+    color: #071019;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 70px;
+    padding: 30px;
+    text-align: center;
+    background: #0d1222;
+    border-top: 1px solid #27304a;
+    color: #77829b;
+}
+
+footer strong {
+    color: #66e3ff;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 16px 5%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .container {
+        width: 92%;
+    }
+
+    .page-title h1 {
+        font-size: 32px;
+    }
+
+    .rule {
+        padding: 20px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="navbar">
+
+        <div class="logo">ESS</div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Wiki</a>
+            <a href="#">Survival</a>
+            <a href="#rules">Rules</a>
+            <a href="#">Commands</a>
+            <a href="#">Vote</a>
+            <a href="#">Store</a>
+            <a href="#">Support</a>
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="container" id="rules">
+
+    <div class="page-title">
+        <h1>📜 ESS Survival Rules</h1>
+        <p>Please read and understand the rules before playing.</p>
+    </div>
+
+
+    <!-- RULE 1 -->
+
+    <section class="rule">
+
+        <h2>
+            <span class="number">1</span>
+            Treat Other Players With Respect
+        </h2>
+
+        <ul>
+            <li>Harassment, bullying, or targeted abuse is not permitted.</li>
+            <li>If another player is bothering you, report the situation instead of escalating it.</li>
+            <li>Respect players who have blocked or ignored you.</li>
+            <li>Player reports should be submitted through the server's official support system.</li>
+            <li>Abuse of staff authority should also be reported to server administration.</li>
+        </ul>
+
+    </section>
+
+
+    <!-- RULE 2 -->
+
+    <section class="rule">
+
+        <h2>
+            <span class="number">2</span>
+            No Griefing
+        </h2>
+
+        <ul>
+            <li>Do not intentionally destroy or damage another player's builds.</li>
+            <li>Revenge griefing is not permitted.</li>
+            <li>Lava casting and large-scale unnecessary destruction are prohibited.</li>
+            <li>Resource worlds may have different rules where specifically stated.</li>
+        </ul>
+
+    </section>
+
+
+    <!-- RULE 3 -->
+
+    <section class="rule">
+
+        <h2>
+            <span class="number">3</span>
+            Keep Communication Appropriate
+        </h2>
+
+        <ul>
+            <li>Harassment, hate speech, racism, excessive profanity, and inappropriate content are prohibited.</li>
+            <li>Inappropriate usernames, builds, signs, skins, and renamed items are not allowed.</li>
+            <li>Keep sensitive discussions out of public server chat.</li>
+            <li>Do not use communication features to deliberately bypass moderation.</li>
+        </ul>
+
+    </section>
+
+
+    <!-- RULE 4 -->
+
+    <section class="rule">
+
+        <h2>
+            <span class="number">4</span>
+            No Hacking, X-Ray, or Exploiting
+        </h2>
+
+        <ul>
+            <li>Cheats such as X-Ray, Kill Aura, Fly, automated combat, and similar advantages are prohibited.</li>
+            <li>Performance and cosmetic modifications may be allowed.</li>
+            <li>Information already available through normal Minecraft interfaces may be displayed by permitted minimap or waypoint modifications.</li>
+            <li>Building schematic tools may be allowed, but automated placement is prohibited unless specifically approved.</li>
+            <li>Any newly discovered server or Minecraft exploit must be reported rather than abused.</li>
+        </ul>
+
+    </section>
+
+
+    <!-- RULE 5 -->
+
+    <section class="rule">
+
+        <h2>
+            <span class="number">5</span>
+            No Automation Tools
+        </h2>
+
+        <ul>
+            <li>Botting, automated clicking, key-weight methods, and similar automation are prohibited.</li>
+            <li>Normal farms that require legitimate player interaction are allowed.</li>
+            <li>Fully automated AFK machines may be restricted where they create unfair advantages or excessive server load.</li>
+        </ul>
+
+    </section>
+
+
+    <!-- RULE 6 -->
+
+    <section class="rule">
+
+        <h2>
+            <span class="number">6</span>
+            No Random PvP
+        </h2>
+
+        <ul>
+            <li>PvP must be agreed to by all players involved.</li>
+            <li>Players entering clearly marked PvP areas are considered to have accepted the area's PvP rules.</li>
+            <li>Do not teleport, lure, or trick players into PvP areas against their wishes.</li>
+            <li>If a player attacks you first, the situation may be treated as consent to fight back, but reporting the incident is recommended.</li>
+        </ul>
+
+    </section>
+
+
+    <!-- RULE 7 -->
+
+    <section class="rule">
+
+        <h2>
+            <span class="number">7</span>
+            English in Public Chat
+        </h2>
+
+        <ul>
+            <li>English should be used in public server chat so staff can effectively moderate conversations.</li>
+            <li>Other languages may be used in private messages and approved private/team channels.</li>
+        </ul>
+
+    </section>
+
+
+    <!-- RULE 8 -->
+
+    <section class="rule">
+
+        <h2>
+            <span class="number">8</span>
+            No Spamming, Begging, or Advertising
+        </h2>
+
+        <ul>
+            <li>Do not repeatedly send identical or nearly identical messages.</li>
+            <li>Avoid excessive capitalization and meaningless character spam.</li>
+            <li>Unauthorized external advertising is prohibited.</li>
+            <li>Do not advertise competing Minecraft servers without permission.</li>
+        </ul>
+
+    </section>
+
+
+    <!-- RULE 9 -->
+
+    <section class="rule">
+
+        <h2>
+            <span class="number">9</span>
+            Claims
+        </h2>
+
+        <ul>
+            <li>Claims may expire after extended periods of inactivity.</li>
+            <li>Do not build immediately next to another player's claim without permission.</li>
+            <li>Respect claim boundaries and the wishes of claim owners.</li>
+            <li>Claim disputes should be reported through the official support system.</li>
+        </ul>
+
+    </section>
+
+
+    <!-- RULE 10 -->
+
+    <section class="rule">
+
+        <h2>
+            <span class="number">10</span>
+            No Scamming, Fraud, or Impersonation
+        </h2>
+
+        <ul>
+            <li>Do not intentionally misrepresent items or trades.</li>
+            <li>Players are responsible for understanding the value of items before trading.</li>
+            <li>Do not impersonate another player or staff member.</li>
+            <li>Keep evidence of important trades if a dispute may arise.</li>
+            <li>Real-money trading must only occur through officially approved ESS services.</li>
+        </ul>
+
+    </section>
+
+
+    <!-- RULE 11 -->
+
+    <section class="rule">
+
+        <h2>
+            <span class="number">11</span>
+            Shop and Economy
+        </h2>
+
+        <ul>
+            <li>Do not manipulate shop ratings using alternate accounts.</li>
+            <li>Do not advertise around another player's shop without permission.</li>
+            <li>Fake or misleading items may not be sold.</li>
+            <li>Do not use the economy to exploit unintended server mechanics.</li>
+            <li>Player warps, auction listings, and shops must be used appropriately.</li>
+        </ul>
+
+    </section>
+
+
+    <!-- RULE 12 -->
+
+    <section class="rule">
+
+        <h2>
+            <span class="number">12</span>
+            Alternate Accounts
+        </h2>
+
+        <ul>
+            <li>Alternate accounts may be permitted by ESS.</li>
+            <li>Limits may apply to how many accounts can be online simultaneously.</li>
+            <li>Do not use alternate accounts to gain unfair economic advantages.</li>
+            <li>Never use accounts that do not belong to you.</li>
+        </ul>
+
+    </section>
+
+
+    <!-- RULE 13 -->
+
+    <section class="rule">
+
+        <h2>
+            <span class="number">13</span>
+            Do Not Evade Punishments
+        </h2>
+
+        <ul>
+            <li>Do not use alternate accounts to bypass a ban or other punishment.</li>
+            <li>Do not deliberately circumvent chat restrictions.</li>
+            <li>Attempts to evade moderation may result in additional punishment.</li>
+        </ul>
+
+    </section>
+
+
+    <!-- RULE 14 -->
+
+    <section class="rule">
+
+        <h2>
+            <span class="number">14</span>
+            Map Art
+        </h2>
+
+        <ul>
+            <li>Map art may be created using permitted building tools.</li>
+            <li>Automated placement remains prohibited unless explicitly approved.</li>
+            <li>Do not resell another player's map art without permission.</li>
+            <li>Map-art builds should be properly claimed.</li>
+        </ul>
+
+    </section>
+
+
+    <!-- RULE 15 -->
+
+    <section class="rule">
+
+        <h2>
+            <span class="number">15</span>
+            Lag Prevention
+        </h2>
+
+        <ul>
+            <li>Machines and farms should be designed efficiently.</li>
+            <li>Do not intentionally create unnecessary server lag.</li>
+            <li>Chunk-loading systems may be prohibited.</li>
+            <li>Machines that continuously create and remove large numbers of blocks or fluids may be restricted.</li>
+        </ul>
+
+    </section>
+
+
+    <!-- QUICK LINKS -->
+
+    <section class="quick-links">
+
+        <h2>Quick Links</h2>
+
+        <a href="#">Home</a>
+        <a href="#">Rules</a>
+        <a href="#">Commands</a>
+        <a href="#">Discord</a>
+        <a href="#">Support</a>
+        <a href="#">Store</a>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        <strong>ESS</strong> © 2026 — All Rights Reserved.
+    </p>
+
+    <p>
+        Please follow the rules and help keep ESS a friendly community.
+    </p>
+
+</footer>
+
+</body>
+</html>
